@@ -1,36 +1,54 @@
-.body{
-    background-color: black;
-
-}
 header{
-    border: solid 2px white;
-}
-header div img{
-    
-    justify-content: left
-  
+    justify-content: center;
+    grid-area: "encab"
+
 }
 .nav-desktop{
-
-    justify-content: right;
-    justify-items: right;
+    flex-wrap: wrap;
+    grid-area: "navdesk";
+ 
 }
+.nav-mobile{
+    display: none;
+   }
 
-.nav-desktop ul{
+.nav-desktop ul {
     display: flex;
-    justify-content: right;
+    width: 100%;
     list-style: none;
+    justify-content: right;
+    margin: 2%;
+    background-color: gray;
 }
-.nav-desktop ul li{
-    padding: 0 2%;
-    text-decoration: none;
-    }
 
-.nav-desktop ul li a {
-    text-decoration: none;
-    color: white;
+.nav-desktop ul li {
+    padding: 0 5%;
 }
-    .nav-mobile{
-        display: none;
-    }
-@media 
+
+main{
+grid-area: "main";
+}
+
+aside{
+grid-area: "asd";
+}
+
+.section-cards{
+grid-area:"cards";
+}
+
+footer{
+grid-area: "foot";
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 0.5fr 0.3fr 2fr 1fr 0.5fr;
+    grid-template-areas: 
+    "encab encab"
+    "navdesk navdesk "
+    "main asd"
+    "cards cards"
+    "foot foot";
+}
