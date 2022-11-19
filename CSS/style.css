@@ -1,15 +1,44 @@
+.body{
+    margin: 2%%;
+}
 header{
+    display: flex;
+    width: 100%;
     justify-content: center;
-    grid-area: "encab"
 
 }
 .nav-desktop{
+    display: flex;
+    width: 100%;
     flex-wrap: wrap;
-    grid-area: "navdesk";
+
  
 }
 .nav-mobile{
     display: none;
+   }
+   .imgmobile{
+    display: none;
+   }
+
+   @media (max-width: 780px) {
+    .imgdesktop{
+        display: none;
+    }
+    .imgmobile{
+        display: block;
+    }
+    .nav-desktop{
+        display: none;
+    }
+    .nav-mobile{
+        display: flex;
+        justify-content: right;
+        margin: 0 5%;
+    }
+    header{
+        justify-content: left;
+    }
    }
 
 .nav-desktop ul {
@@ -25,30 +54,23 @@ header{
     padding: 0 5%;
 }
 
-main{
-grid-area: "main";
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+justify-content: space-between;
+
 }
 
-aside{
-grid-area: "asd";
-}
+.card01{
+    background-color: green;
+    width: 150px;
+    height: 400px;
 
-.section-cards{
-grid-area:"cards";
+    flex-direction: column;
 }
 
 footer{
-grid-area: "foot";
-}
-
-.grid{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-columns: 0.5fr 0.3fr 2fr 1fr 0.5fr;
-    grid-template-areas: 
-    "encab encab"
-    "navdesk navdesk "
-    "main asd"
-    "cards cards"
-    "foot foot";
+    background-color: grey;
+    margin: 2% 0 0 0;
 }
