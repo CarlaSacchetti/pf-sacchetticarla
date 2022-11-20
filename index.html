@@ -8,6 +8,7 @@
     <!-- bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="shortcut icon" href="./IMG/favicon.png" type="png">
     <!--fuentes e iconos-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,9 +25,9 @@
       <header>
         <div><img src="./IMG/mv.png" alt=""></div> </header>        
      <nav class="nav-desktop">
-<ul><li><a href="./Pages/estudio.html">ESTUDIO</a></li>
-    <li><a href="./Pages/obras.html">PROYECTOS</a></li>
-    <li><a href="./PAGES/contacto.html">CONTACTO</a></li>
+<ul><li><a href="./pages/estudio.html">ESTUDIO</a></li>
+    <li><a href="./pages/obras.html">PROYECTOS</a></li>
+    <li><a href="./pages/contacto.html">CONTACTO</a></li>
 </ul>
 </nav>
 <nav class="nav-mobile">
@@ -35,9 +36,9 @@
       MENU
     </a>            
     <ul class="dropdown-menu desplegable-mobile">
-      <li><a class="dropdown-item items-mobile" href="./Pages/estudio.html">ESTUDIO</a></li>
-      <li><a class="dropdown-item items-mobile" href="./Pages/obras.html">PROYECTOS</a></li>
-      <li><a class="dropdown-item items-mobile" href="./PAGES/contacto.html">CONTACTO</a></li>
+      <li><a class="dropdown-item items-mobile" href="./pages/estudio.html">ESTUDIO</a></li>
+      <li><a class="dropdown-item items-mobile" href="./pages/obras.html">PROYECTOS</a></li>
+      <li><a class="dropdown-item items-mobile" href="./pages/contacto.html">CONTACTO</a></li>
     </ul>
   </div>
 </nav>
@@ -56,38 +57,73 @@
     <img class="imgmobile" src="./IMG/02 300-350.jpg" alt="distrito pichincha"></aside>
     </div>  
 </div>
-<section class="sectioncard">   
-  <div class="container sectioncard">
-      <div class="row col-12 cards-obras">
-     <div class="card card-individual col-3 col-sm-8" style="width: 18rem;" data-aos="fade-up-right">
+
+<div class="container mi-container">
+  <div class="row col-12 cards-obras" id="comercial"> 
+      <div class="card card-individual col-4 col-sm-12" style="width: 18rem;" data-aos="flip-right">
+      <img class="card-img-top card-img" src="./IMG/Sobre el estudio 01.jpg" alt="Mamuschka Funes">
+      <div class="card-body">
+        <h5 class="card-title titulo-card">Estudio</h5>
+        <p class="card-text">Somos un equipo de jovenes profesionales liderado por el Arq. Martin Vorobioff
+      </p>
+      </div>
+      <ul class="list-group list-group-flush ">
+        <li class="list-group-item card-li">   <a href="./pages/estudio.html" class="btn btn-primary mi-btn">Click aquí</a></li>
+      </ul>
+    </div>
+    <div class="card card-individual col-4 col-sm-12" style="width: 18rem;" data-aos="flip-right">
+      <img class="card-img-top card-img" src="./IMG/reformas 01.jpg" alt="Obras de arquitectos en rosario">
+      <div class="card-body">
+        <h5 class="card-title titulo-card">Obras</h5>
+        <p class="card-text">Proyectos residenciales y comerciales en Rosario y alrededores</p>
+      </div>
+      <ul class="list-group list-group-flush ">
+        <li class="list-group-item card-li">   <a href="./pages/obras.html" class="btn btn-primary mi-btn">Click aquí</a></li>
+      </ul>
+    </div>
+    <div class="card card-individual col-4 col-sm-12" style="width: 18rem;" data-aos="flip-right">
+      <img class="card-img-top card-img" src="./IMG/obras particulares.jpg" alt="Contacto Martin Vorobioff">
+      <div class="card-body">
+        <h5 class="card-title titulo-card">Contacto</h5>
+        <p class="card-text">Queres saber más? Dejanos tus datos y pronto nos estaremos contactando</p>
+      </div>
+      <ul class="list-group list-group-flush ">
+        <li class="list-group-item card-li">   <a href="./pages/contacto.html" class="btn btn-primary mi-btn">Click aquí</a></li>
+      </ul>
+    </div>
+</div></div>
+  
+        <!--
+     <div class="card card-individual col-4 col-sm-12" style="width: 18rem;" data-aos="fade-up-right">
           <img src="./IMG/Sobre el estudio 01.jpg" class="card-img-top card-img" alt="Estudio Mv Arquitecurta y diseño">
           <div class="card-body">
             <h5 class="card-title titulo-card"> ESTUDIO</h5>
             <p class="card-text">Somos un equipo de jovenes profesionales liderado por el Arq. Martin Vorobioff</p>
-            <a href="./Pages/estudio.html" class="btn btn-primary mi-btn">Click aquí</a>
+            <a href="./pages/estudio.html" class="btn btn-primary mi-btn">Click aquí</a>
           </div>
         </div>
       
-     <div class="card card-individual col-3 col-sm-8" style="width: 18rem;" data-aos="fade-up-left">
+     <div class="card card-individual col-4 col-sm-12" style="width: 18rem;" data-aos="fade-up-left">
         <img src="./IMG/obras particulares.jpg" class="card-img-top card-img" alt="construccion y remodelacion de vivendas">
         <div class="card-body">
           <h5 class="card-title titulo-card"> OBRAS</h5>
           <p class="card-text">Proyectos residenciales y comerciales en Rosario y alrededores</p>
-          <a href="./Pages/obras.html" class="btn btn-primary mi-btn">Click aquí</a>
+          <a href="./pages/obras.html" class="btn btn-primary mi-btn">Click aquí</a>
         </div>
     </div>                
           
-    <div class="card card-individual col-3 col-sm-88" style="width: 18rem;" data-aos="fade-up-right">
+    <div class="card card-individual col-4 col-sm-12" style="width: 18rem;" data-aos="fade-up-right">
       <img src="./IMG/reformas 01.jpg" class="card-img-top card-img" alt="construccion y remodelacion de locales comerciales">
       <div class="card-body">
         <h5 class="card-title titulo-card">CONTACTO</h5>
         <p class="card-text">Queres saber más? Dejanos tus datos y pronto nos estaremos contactando</p>
-        <a href="./Pages/contacto.html" class="btn btn-primary mi-btn">Click Aquí</a>
+      -->
       </div>
     </div>
       </div>
   </div>   
- </section>
+
+  <a href="./pages/contacto.html" class="btn btn-primary mi-btn">Click Aquí</a>
 <!--FOOTER-->
 
 <footer id="contacto" class=".bg-dark text-white text-center text-lg-start mi-footer">

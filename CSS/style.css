@@ -48,7 +48,7 @@ padding:  2%;
     .body{
         background-color: white;
         background: none;
-        margin: 2%;
+        margin: 2% 0;
     }
     .bodyobras{
         background-color: white;
@@ -149,8 +149,7 @@ main{
     .cards-obras {
       justify-content: center;
       display: flex;
-      margin: 2% 0;
- 
+ flex-wrap: wrap;
     }
     .card-individual{
     height: 100%;
